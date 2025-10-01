@@ -31,6 +31,15 @@ A comprehensive Fantasy Premier League dashboard that provides detailed analytic
 - **Chip Usage Tracking** - Wildcard, Free Hit, etc.
 - **Live Data Integration** - Real-time updates
 
+### 🏆 **Awards System**
+The dashboard includes 15+ custom awards to make your mini-league more competitive:
+- **Performance Awards**: Golden Boot, Playmaker, Defensive King
+- **Strategic Awards**: Transfer King, Best Captain, Steady King
+- **Luck Awards**: Dream Team King, Penalty King, Shooting Stars
+- **Monthly Competitions**: Classic and H2H monthly standings
+
+📖 **For detailed award explanations, see [AWARDS_GUIDE.md](AWARDS_GUIDE.md)**
+
 ## 🚀 Quick Start
 
 ### Option 1: Use Template (Recommended)
